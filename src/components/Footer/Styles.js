@@ -4,7 +4,7 @@ export const StyledFooter = styled.footer`
     margin: auto;
     max-width: 140rem;
     width: 100%;
-    margin-top: 35rem;
+    margin-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;

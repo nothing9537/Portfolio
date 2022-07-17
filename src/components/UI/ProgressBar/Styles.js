@@ -20,7 +20,7 @@ export const StyledProgressBarProgress = styled.div`
     position: absolute;
     width: ${ props => props.percent || "70%" };
     border-radius: 8rem;
-    background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    background: ${props => props.theme.colors.mainGradient}
 `
 
 export const LabelWrapper = styled.div`

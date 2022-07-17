@@ -1,7 +1,7 @@
 import React from 'react'
+import ProjectsList from '../ProjectsList/ProjectsList'
 import Title from '../Title/Title'
-import Button from '../UI/Button/Button'
-import { GridLayout, ImageWrapper, ProjectDescription, ProjectImage, ProjectTemplate, ProjectTitle, StyledLine, StyledProjects } from './Styles'
+import { GridLayout, StyledProjects } from './Styles'
 
 const Projects = () => {
 
@@ -19,23 +19,7 @@ const Projects = () => {
                 Projects
             </Title>
             <GridLayout>
-                {items.map((card, index) =>
-                    <ProjectTemplate key={index}>
-                        <ImageWrapper>
-                            <ProjectImage path={card.path} />
-                        </ImageWrapper>
-                        <ProjectTitle>
-                            {card.title}
-                        </ProjectTitle>
-                        <StyledLine />
-                        <ProjectDescription>
-                            {card.description}
-                        </ProjectDescription>
-                        <Button width="20rem" heigth="6rem" font-size="2rem" href={card.link} target="_blank" margin="1rem 0 0 0">
-                            Look it up
-                        </Button>
-                    </ProjectTemplate>
-                )}
+                <ProjectsList items={items} />
             </GridLayout>
         </StyledProjects>
     )

@@ -1,5 +1,11 @@
 import React from 'react'
-import { LabelItem, LabelWrapper, StyledProgressBarProgress, StyledProgressBarWrapper, Wrapper } from './Styles'
+import {
+    LabelItem,
+    LabelWrapper,
+    StyledProgressBarProgress,
+    StyledProgressBarWrapper,
+    Wrapper
+} from './Styles'
 
 const ProgressBar = ({ firstItem, secondItem, ...props }) => {
     return (

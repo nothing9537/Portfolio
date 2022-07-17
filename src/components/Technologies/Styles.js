@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const StyledTechnologies = styled.div`
-    margin-bottom: 33rem;
+    margin-bottom: 25rem;
 `
 
 export const ProgressWrapper = styled.div`

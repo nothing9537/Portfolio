@@ -64,7 +64,7 @@ export const StyledLine = styled.hr`
     max-width: 30rem;
     width: 100%;
     border-radius: 8rem;
-    background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    background: ${props => props.theme.colors.mainGradient}
     height: .4rem;
 `
 

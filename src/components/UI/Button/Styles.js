@@ -6,7 +6,7 @@ export const StyledButton = styled.a`
     max-width: ${props => props.width || "28rem"};
     width: 100%;
     height: ${props => props.heigth || "8rem"};
-    background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    background: ${props => props.theme.colors.mainGradient};
     border-radius: 8.3rem;
     user-select: none;
     display: flex;
